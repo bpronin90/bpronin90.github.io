@@ -25,22 +25,22 @@
     <li>the profile name you choose to save (<code>display_name</code>);</li>
     <li>body-weight entries, weight goals and archived goals;</li>
     <li>workout content, including workout notes and related deload/fatigue history; and</li>
-    <li>a stable per-install sync identifier used to resolve sync conflicts.</li>
+    <li>selected profile preferences and feature toggles, such as units, tracked lifts, workout-display state, and fatigue/deload settings.</li>
   </ul>
   <p>We do not collect the template categories previously listed here, such as demographic characteristics, education, employment history, financial information, purchase history, or advertising/browsing profiles.</p>
 
   <h2>Device-local information and notifications</h2>
-  <p>Your training history and app settings can be stored on your device. Local reminders are scheduled on your device only after you enable them. Kilo does not obtain, store, or transmit a push-notification token.</p>
+  <p>Your training history and app settings can be stored on your device. When you enable cloud sync, the selected preferences and feature toggles described above are also synced with your account. A stable per-install sync identifier stays on your device and is not uploaded. Local reminders are scheduled on your device only after you enable them. Kilo does not obtain, store, or transmit a push-notification token.</p>
 
   <h2>Diagnostics and service security</h2>
   <p>If a production build is configured with Sentry, Kilo sends crash and error diagnostics to Sentry to help us identify and fix problems. Sentry diagnostics are not sent when that service is not configured. Kilo also uses Expo Updates to deliver app updates.</p>
-  <p>To protect the account-export and account-deletion services from abuse, we temporarily retain the requesting IP address and authenticated user-ID rate-limit record. Export rate-limit records expire after 10 minutes; deletion rate-limit records expire after 1 hour.</p>
+  <p>To protect the account-export and account-deletion services from abuse, we temporarily retain the requesting IP address and authenticated user-ID rate-limit record. Export records are eligible for deletion after 10 minutes and deletion records after 1 hour; a scheduled cleanup runs every 30 minutes.</p>
 
   <h2>How we use information</h2>
   <p>We use information to provide optional account authentication and cloud sync, display and manage your training data, provide local reminders you request, secure export and deletion services, diagnose faults when diagnostics are configured, and deliver app updates.</p>
 
   <h2>Service providers and optional social sign-in</h2>
-  <p>We use Supabase for account authentication, cloud storage, and related infrastructure. You may optionally sign in with GitHub OAuth on web or Android. GitHub acts only as an identity provider for that sign-in; it does not host your Kilo account or synced training data. If enabled, Sentry processes diagnostics. Expo Updates provides update-delivery services. Termly provides the external data-subject-access/deletion-request form linked below.</p>
+  <p>We use Supabase for account authentication, cloud storage, and related infrastructure. If you use email/password sign-up, sign-in, or password reset, your password credential is submitted to Supabase Auth for that purpose; Kilo does not store a plaintext password in its app data. You may optionally sign in with GitHub OAuth on web or Android. GitHub acts only as an identity provider for that sign-in; it does not host your Kilo account or synced training data. If enabled, Sentry processes diagnostics. Expo Updates provides update-delivery services. Termly provides the external data-subject-access/deletion-request form linked below.</p>
   <p>We use these providers to operate Kilo, not to sell your personal information or to provide targeted advertising.</p>
 
   <h2>Exports and sharing you initiate</h2>
